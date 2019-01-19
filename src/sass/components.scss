@@ -1,21 +1,35 @@
+.h-head {
+  font-weight: $font-weight-exbold;
+  font-size: 3.5em;
+  text-transform: uppercase;
+}
 .m-head {
   font-weight: $font-weight-exbold;
   font-size: 2em;
   letter-spacing: 0.1em;
   color: $color-black;
+  text-transform: uppercase;
 }
 .s-head {
   font-weight: $font-weight-bold;
   color: $color-black;
   font-size: 1.1em;
   letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 .p-sub {
   font-size: 0.9em;
   line-height: 25px;
 }
+.pb-25 {
+  padding-bottom: 25px;
+}
 .pb-40 {
   padding-bottom: 40px;
+}
+.pt-100
+{
+  padding-top: 100px;
 }
 .link {
   text-decoration: none;
@@ -42,15 +56,27 @@
   background: transparent;
   padding-left: 0;
   li {
-    color: #333;
+    color: $color-black;
     a {
-      color: #00338d; 
+      color: $color-blue;
       font-weight: $font-weight-semibold;
       letter-spacing: 0;
-    }
-    & :hover {
-      color: $color-grey;
-      text-decoration: none;
-    }
+      &:hover {
+        color: $color-blue-lighter;
+        text-decoration: none;
+      }
+    }    
+  }
+}
+.element-d {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e2e2;
+}
+.drop-head {
+  color: $color-black;
+  &:hover {
+    color: $color-blue;
+    text-decoration: none;
   }
 }

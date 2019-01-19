@@ -1,3 +1,5 @@
+<p align="center"><a href="http://cea.ac.in" title="ceadoor"><img src="https://github.com/ceadoor/cea.ac.in/raw/master/src/assets/LOGO/ceadoor-PNG.png" alt="ceadoor logo" width="300" /></a></p>
+
 <h1 align="center">Website for College of Engineering Adoor</h1>
 
 <p align="center">https://ceadoor.github.io/cea.ac.in/</p>
@@ -15,6 +17,9 @@
   <a href="https://www.npmjs.com/get-npm">
     <img src="https://img.shields.io/badge/npm-%3E%3D6.4.1-lightgrey.svg" alt="npm" />
   </a>
+  <a href="https://github.com/prettier/prettier">
+    <img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg" alt="code style: prettier" />
+  </a>
 </div>
 
 <br />
@@ -23,7 +28,7 @@ Welcome! This repository houses all of the assets required to build the website 
 
 ##### Follow us
 
-| 🖥 [Website](https://ceadoor.github.io/cea.ac.in/) | 💬 [Slack](https://ceadoor.slack.com/) | 🚀 [Blog](#) | 🐥 [Twitter](#) |
+| 🖥 [Website](https://ceadoor.github.io/cea.ac.in/) | 💬 [Slack](https://kutt.it/join-ceadoor) | 🚀 [Blog](#) | 🐥 [Twitter](#) | 📷 [Instagram](https://www.instagram.com/tracecea?r=nametag) |
 
 
 --------
@@ -45,4 +50,8 @@ For starters, there are some open issues with the [#for-new-contributors](https:
 
 ## License
 
-Copyright © 2018 [CEADOOR](https://github.com/ceadoor) ALL RIGHTS RESERVED, licensed under [MIT](https://github.com/ceadoor/cea.ac.in/blob/master/LICENSE)
+Copyright © 2018 [CEADOOR](http://cea.ac.in) ALL RIGHTS RESERVED, licensed under [MIT](https://github.com/ceadoor/cea.ac.in/blob/master/LICENSE)
+
+## Special Thanks
+
+Thanks to [Sk Ayaz](https://github.com/Ayaz1997) for [Logo](https://github.com/ceadoor/cea.ac.in/raw/master/src/assets/Logo%20Redesign/PNG%201080P.png) Redesigning

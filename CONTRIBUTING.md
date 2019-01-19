@@ -2,43 +2,63 @@
 
 ### Welcome
 
-First off, thank you for considering contributing to this repo.
+*First off, thank you for considering contributing to this repo.*
 
 Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue, assessing changes, and helping you finalize your pull requests.
 
-This website is an open source project and we welcome any contributions from our community! There are more ways to contribute that just fixing bugs and writing features - improving the design, submitting bug reports and opening issues are all great contributions and will be welcomed as much as any other.
+This website is an open source project and we welcome any contributions from our community! 
+
+There are more ways to contribute that just fixing bugs and writing features - improving the design, submitting bug reports and opening issues are all great contributions and will be welcomed as much as any other.
 
 #### Ground Rules
 As contributors you should be respectful and considerate of others - both contributors and non-contributors alike. Please refer to the [code of conduct](CODE_OF_CONDUCT.md) for our and your responsibilities to the rest of the community.
 
 ### Your Responsibilities
-* Ensure contributions are unit tested and that all tests pass before submitting any pull-request
+* Ensure changes requested on PR's are done and not left behind.
 * If you do find any issues or think of a feature please [create a Github issue](https://github.com/ceadoor/cea.ac.in/issues/new) for this first. Discuss things transparently and get community feedback.
 
 ---
 
+
+### [Node.js LTS](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) must be installed in your local machine.
+
+
 ## Quick Start
 
-#### 1. Fork this repository
+#### 1. Fork this repository to your account
 #### 2. Clone the fork to your local machine
 ```
-git clone https://github.com/username/cea.ac.in .
+git clone https://github.com/username/cea.ac.in
 ```
-#### 3. Switch to the directory and install all packages
+#### 3. Switch to the directory 
+```
+cd cea.ac.in/
+```
+#### 4. Create a new branch, say ```feature/new```
+```
+git checkout -b feature/new
+```
+#### 5. Install all packages (in Windows, use ```cmd```)
 ```
 npm install
 ```
-#### 4. Start Development Environment
+#### 6. Start Development Environment
 ```
 npm start
 ```
 This will provide you with a web interface available at **`http://localhost:8080/`**
+#### 7. Commit, Push, and submit PR
+```
+git add .
+git commit -m "commit-message"
+git push origin branchName
+```
 
 ---
 
 # Your First Contribution
 
-If you're not sure where to start issues we've labelled some issues with [#for-new-contributors](https://github.com/ceadoor/cea.ac.in/issues?q=is%3Aissue+is%3Aopen+label%3Afor-new-contributors) so these are a great place to start!
+If you're not sure where to start, we've labelled some issues with [#for-new-contributors](https://github.com/ceadoor/cea.ac.in/issues?q=is%3Aissue+is%3Aopen+label%3Afor-new-contributors) so these are a great place to start!
 
 If you do decide to work on an issue comment saying you intend to pick it up and we'll assign it to you. If you decide it's too much however do tell us and we can try to help out or unassign it so it's free for someone else to pick up.
 
@@ -49,23 +69,9 @@ At this point, you're ready to make your changes! Feel free to ask for help; eve
 
 ---
 
-# Loading
+# Loading Files
 
 - Add your html files in the `src` directory (By default `index.html` is added to your `src` directory, feel free to make changes)
-
-  - Make sure you add it in your `webpack.config.js` (Replace `yourfile` with your `filename`)
-
-    ```javascript
-    plugins: [
-        ...
-        new HtmlWebpackPlugin({
-            template: 'src/yourfile.html',
-            inject: 'body',
-            filename: 'yourfile.html'
-        }),
-        ...
-    ],
-    ```
 
 - Add images to your `src/assets` folder
 - Add sass files to `src/scss` folder
@@ -75,12 +81,10 @@ At this point, you're ready to make your changes! Feel free to ask for help; eve
     ```sass
     @import "filename";
     ```
+    Then restart the development environment
+
 ## Note 
-After modifying 'webpack.config.js' file, make sure you install the currently required modules with
-```
-npm install
-```
-Then start development environment normally with
+After adding html files or any other files webpack hasn't already tracked, make sure you reload the development environment normally with
 ```
 npm start
 ```
